@@ -1,4 +1,6 @@
+import { server } from "./getServer";
+
 export const getSong = async (id) => {
-    const song = await fetch('http://localhost:3000/deezer/track/'+id).then(res => res.json());
+    const song = await fetch(server+'deezer/track/'+id).then(res => res.json());
     return song;
 }

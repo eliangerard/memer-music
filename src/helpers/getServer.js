@@ -1,0 +1,1 @@
+export const server = 'http://3.129.195.138:3000/';

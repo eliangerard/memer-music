@@ -9,10 +9,6 @@
   opacity: 0.5;
 }
 
-.backPlayer::before {
-  background-color: black;
-}
-
 .player {
   margin: 0.5rem;
   padding: 2rem 0 1rem 0;
@@ -71,11 +67,13 @@
 }
 
 .playerData>svg {
+  height: 2rem;
   width: 2rem;
   fill: var(--gray-light);
 }
 
 .actualSongData {
+  height: 100%;
   width: 100%;
   margin: 1rem 0;
 }
@@ -169,7 +167,92 @@
   padding: 0.5rem 1rem;
   transition: outline 100ms;
 }
+
 .fullSong:hover {
   cursor: pointer;
   outline: var(--text) solid 3px;
+}
+
+@media (max-width: 986px) {
+  .player {
+    flex-direction: row;
+    top: auto;
+    bottom: 0;
+    width: calc(100% - 3rem);
+    height: 5rem;
+    align-items: center;
+    padding: 0.5rem 1rem;
+  }
+
+  .backPlayer {
+    flex-direction: row;
+    top: auto;
+    bottom: 0;
+    width: calc(100% - 2rem);
+    height: 3rem;
+  }
+
+  .player>img {
+    height: 4.5rem;
+    width: 5.5rem;
+    border-radius: 2rem;
+  }
+  .playerHeader {
+    display: none!important;
+  }
+  .playerInfo {
+    width: calc(50% - 2rem);
+    
+    margin: 0.5rem 1rem;
+  }
+  .actualSongData {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+  .actualSongData p {
+    font-size: medium;
+    margin-right: 0.5rem;
+  }
+  .duration p {
+    font-size: small;
+    margin: 0;
+  }
+  #progressBar {
+    margin: 0.5rem 0;
+  }
+  .fullSong {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .player img {
+    display: none;
+  }
+  .player {
+    flex-direction: column;
+    height: 8rem;
+  }
+  .backPlayer {
+    height: 9rem;
+    opacity: 1;
+  }
+  .playerInfo {
+    width: calc(100% - 2rem);
+    padding: 0 1rem;
+  }
+  .playerControls {
+    width: fit-content;
+    padding: 0 1rem;
+    justify-content: center;
+    height: 5rem;
+    background-color: transparent!important;
+  }
+  .playerControls button {
+    margin: 0;
+
+  }
 }

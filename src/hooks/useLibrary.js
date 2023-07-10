@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { testSession } from "../helpers/testSession";
 import { getUser } from "../helpers/getUser";
+import { server } from "../helpers/getServer";
 
 export const useLibrary = (user, accessToken) => {
 
@@ -90,14 +91,14 @@ export const useLibrary = (user, accessToken) => {
             isLoading: true,
         })
 
-        console.log(`http://localhost:3000/deezer/user/${user.id}/recommendations/releases?access_token=${localStorage.getItem("access")}&output=json`);
+        console.log(`${server}deezer/user/${user.id}/recommendations/releases?access_token=${localStorage.getItem("access")}&output=json`);
 
-        const releases = await fetch(`http://localhost:3000/deezer/user/${user.id}/recommendations/releases?access_token=${localStorage.getItem("access")}&output=json`).then(res => res.json());
-        const playlists = await fetch(`http://localhost:3000/deezer/user/${user.id}/recommendations/playlists?access_token=${localStorage.getItem("access")}&output=json`).then(res => res.json());
-        const songs = await fetch(`http://localhost:3000/deezer/user/${user.id}/recommendations/tracks?access_token=${localStorage.getItem("access")}&output=json`).then(res => res.json());
-        const albums = await fetch(`http://localhost:3000/deezer/user/${user.id}/recommendations/albums?access_token=${localStorage.getItem("access")}&output=json`).then(res => res.json());
-        const artists = await fetch(`http://localhost:3000/deezer/user/${user.id}/recommendations/artists?access_token=${localStorage.getItem("access")}&output=json`).then(res => res.json());
-        const yourSongs = await fetch(`http://localhost:3000/deezer/user/${user.id}/tracks?access_token=${localStorage.getItem("access")}&output=json`).then(res => res.json());
+        const releases = await fetch(`${server}deezer/user/${user.id}/recommendations/releases?access_token=${localStorage.getItem("access")}&output=json`).then(res => res.json());
+        const playlists = await fetch(`${server}deezer/user/${user.id}/recommendations/playlists?access_token=${localStorage.getItem("access")}&output=json`).then(res => res.json());
+        const songs = await fetch(`${server}deezer/user/${user.id}/recommendations/tracks?access_token=${localStorage.getItem("access")}&output=json`).then(res => res.json());
+        const albums = await fetch(`${server}deezer/user/${user.id}/recommendations/albums?access_token=${localStorage.getItem("access")}&output=json`).then(res => res.json());
+        const artists = await fetch(`${server}deezer/user/${user.id}/recommendations/artists?access_token=${localStorage.getItem("access")}&output=json`).then(res => res.json());
+        const yourSongs = await fetch(`${server}deezer/user/${user.id}/tracks?access_token=${localStorage.getItem("access")}&output=json`).then(res => res.json());
 
         data = {
             releases: releases,

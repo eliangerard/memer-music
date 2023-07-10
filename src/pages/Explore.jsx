@@ -7,6 +7,7 @@ import { PlaylistCard } from "../components/PlaylistCard";
 import { PodcastCard } from "../components/PodcastCard";
 import { useFetch } from "../hooks/useFetch";
 import { GenreCard } from "../components/GenreCard";
+import { server } from "../helpers/getServer";
 
 export const Explore = () => {
     const [charts, setCharts] = useState({})
@@ -19,7 +20,7 @@ export const Explore = () => {
         fetchCharts();
     }, []);
 
-    const { data, isLoading, hasError } = useFetch('http://localhost:3000/deezer/genre');
+    const { data, isLoading, hasError } = useFetch(server+'deezer/genre');
     console.log(data);
 
     const genres = data?.data;

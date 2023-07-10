@@ -1,33 +1,35 @@
+import { server } from "./getServer";
+
 const searchTrack = async (q) => {
-    const results = await fetch('http://localhost:3000/deezer/search?q=' + q).then(res => res.json());
+    const results = await fetch(server+'deezer/search?q=' + q).then(res => res.json());
     return results;
 }
 const searchArtist = async (q) => {
-    const results = await fetch('http://localhost:3000/deezer/search/artist?q=' + q).then(res => res.json());
+    const results = await fetch(server+'deezer/search/artist?q=' + q).then(res => res.json());
     return results;
 }
 const searchAlbum = async (q) => {
-    const results = await fetch('http://localhost:3000/deezer/search/album?q=' + q).then(res => res.json());
+    const results = await fetch(server+'deezer/search/album?q=' + q).then(res => res.json());
     return results;
 }
 const searchHistory = async (q) => {
-    const results = await fetch('http://localhost:3000/deezer/search/history').then(res => res.json());
+    const results = await fetch(server+'deezer/search/history').then(res => res.json());
     return results;
 }
 const searchPlaylist = async (q) => {
-    const results = await fetch('http://localhost:3000/deezer/search/playlist?q=' + q).then(res => res.json());
+    const results = await fetch(server+'deezer/search/playlist?q=' + q).then(res => res.json());
     return results;
 }
 const searchPodcast = async (q) => {
-    const results = await fetch('http://localhost:3000/deezer/search/podcast?q=' + q).then(res => res.json());
+    const results = await fetch(server+'deezer/search/podcast?q=' + q).then(res => res.json());
     return results;
 }
 const searchRadio = async (q) => {
-    const results = await fetch('http://localhost:3000/deezer/search/radio?q=' + q).then(res => res.json());
+    const results = await fetch(server+'deezer/search/radio?q=' + q).then(res => res.json());
     return results;
 }
 const searchUser = async (q) => {
-    const results = await fetch('http://localhost:3000/deezer/search/user?q=' + q).then(res => res.json());
+    const results = await fetch(server+'deezer/search/user?q=' + q).then(res => res.json());
     return results;
 }
 const searchAll = async (q) => {
