@@ -1,0 +1,33 @@
+nav {
+  display: flex;
+  flex-direction: column;
+  width: 3rem;
+  position: fixed;
+  left: 0;
+  top: 5rem;
+  padding: 2rem;
+  height: 100%;
+}
+
+nav > a {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  text-align: left;
+  margin: 1rem 0;
+}
+
+nav > a > svg {
+  fill: var(--gray);
+  transition: fill 150ms;
+  height: 2rem;
+  width: 2rem;
+}
+
+nav > a:hover > svg {
+  fill: var(--selected);
+}
+
+.selectedNav > svg {
+  fill: var(--selected);
+}/*# sourceMappingURL=Navbar.css.map */

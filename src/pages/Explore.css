@@ -1,0 +1,36 @@
+.topArtists::-webkit-scrollbar {
+    background-color: transparent;
+    height: 0.5rem;
+}
+
+.topArtists::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    height: 1rem;
+    border-radius: 2rem;
+    transition: background-color 150ms;
+}
+
+.topArtists:hover::-webkit-scrollbar-thumb {
+    background-color: var(--gray);
+
+}
+
+.topTracksContainer {
+    width: 90rem;
+    height: 12rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.expanded {
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.genres {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}

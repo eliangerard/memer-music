@@ -1,0 +1,101 @@
+.track {
+    display: flex;
+    height: 4rem;
+    padding: 0.5rem;
+    background-color: black;
+    border-radius: 2rem;
+    color: var(--text);
+    width: 15rem;
+    margin: 0.5rem;
+    outline-width: 0;
+    outline-style: solid;
+    position: relative;
+}
+
+.trackExpanded {
+    width: 90%;
+}
+
+.track:hover{
+    outline-width: 4px;
+    cursor: pointer;
+}
+
+.track p {
+    margin: 0rem;
+    width: 140px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+}
+
+.trackData {
+    display: flex;
+    padding: 0.5rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.trackName {
+    font-weight: bold;
+}
+
+.trackAuthor {
+    color: var(--gray-light);
+}
+
+.track>img {
+    width: 35%;
+    border-radius: 1.6rem;
+    object-fit: cover;
+}
+.track>img {
+    width: 5rem;
+    border-radius: 1.6rem;
+    object-fit: cover;
+}
+
+.podcastFans {
+    background-color: var(--gray-light);
+    border-radius: 2rem;
+    width: fit-content!important;
+    padding: 0 0.5rem;
+}
+
+.trackDuration {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100% - 1rem);
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+}
+
+.trackExpanded > .trackData {
+    width: 70%;
+}
+
+.trackExpanded > .trackData > p {
+    width: 100%;
+}
+
+.trackBackground {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+    height: 100%;
+    margin: -0.5rem;
+    border-radius: 2rem;
+}
+
+.trackBackground > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: blur(15px);
+    opacity: 50%;
+}

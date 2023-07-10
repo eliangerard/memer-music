@@ -1,0 +1,25 @@
+.searchHeader {
+    overflow-x: scroll;
+    padding-bottom: 0.5rem;
+}
+
+.searchHeader a {
+    margin: 0 0.5rem;
+    border: none;
+    color: var(--text);
+    background-color: var(--gray);
+    border-radius: 2rem;
+    padding: 0.5rem 1.5rem;
+    font-weight: 600;
+    transition: color 150ms, background-color 150ms;
+    text-decoration: none;
+}
+.searchHeader a:hover {
+    background-color: var(--selected);
+    color: black;
+    cursor: pointer;
+}
+.selectedSearch {
+    background-color: var(--selected)!important;
+    color: black!important;
+}

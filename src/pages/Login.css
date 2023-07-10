@@ -1,0 +1,39 @@
+.loginPanel {
+    position: fixed;
+    right: 0;
+    top: 55%;
+    transform: translate(0%,-50%);
+    background-color: var(--background-t);
+    border-radius: 2rem;
+    backdrop-filter: blur(20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 25rem;
+    width: calc(100% - 35rem);
+    height: 80vh;
+    z-index: 2;
+    color: var(--text);
+    font-size: larger;
+}
+
+.loginPanel img {
+    height: 5rem;
+}
+.loginPanel button {
+    width: 70%;
+    height: 3rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: var(--gray-light);
+    color: var(--text);
+    font-weight: bold;
+    font-size: larger;
+    transition: background-color 150ms, color 150ms;
+}
+.loginPanel button:hover {
+    background-color: var(--text);
+    color: black;
+    cursor: pointer;
+}

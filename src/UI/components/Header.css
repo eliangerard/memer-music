@@ -1,0 +1,43 @@
+header {
+	display: flex;
+	width: calc(100% - 24rem);
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 2rem;
+	position: fixed;
+	z-index: 2;
+	top: 0;
+	background-color: var(--background);
+}
+
+.logo {
+	height: 2rem;
+}
+
+.btnProfile {
+	background-color: var(--gray);
+	display: flex;
+	align-items: center;
+	padding-left: 1rem;
+	border-radius: 50rem;
+	width: 4.5rem;
+	height: 2.5rem;
+	justify-content: space-between;
+}
+
+.btnProfile>svg {
+	fill: var(--gray-light);
+	height: 1.5rem;
+}
+
+.btnProfile>img {
+	height: 2.5rem;
+	border-radius: 100%;
+}
+.btnProfile> img:hover {
+	cursor: pointer;
+}
+.leftHeader {
+	width: 80%;
+}
+/*# sourceMappingURL=Header.css.map */

@@ -1,0 +1,45 @@
+.artistCard {
+  border-radius: 2rem;
+  overflow: hidden;
+  height: 10rem;
+  margin: 0.5rem;
+  width: 9rem;
+  outline-width: 0px;
+  outline-style: solid;
+
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-direction: column;
+}
+
+.artistCard:hover {
+  outline-width: 4px;
+  cursor: pointer;
+}
+
+.artistCard>img {
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  height: 70%;
+  border-radius: 2rem;
+}
+.artistCard div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30%;
+  width: 100%;
+}
+.artistCard p {
+  margin: 0;
+  height: 2rem;
+  font-weight: 600;
+  color: var(--text);
+  text-align: center;
+  width: 120px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

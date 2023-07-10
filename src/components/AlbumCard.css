@@ -1,0 +1,53 @@
+.albumCard {
+    border-radius: 2rem;
+    overflow: hidden;
+    height: 12rem;
+    margin: 0.5rem;
+    width: 10rem;
+    outline-width: 0px;
+    outline-style: solid;
+
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: column;
+}
+
+.albumCard:hover {
+    outline-width: 4px;
+    cursor: pointer;
+}
+
+.albumCard>img {
+    margin: 0.5rem;
+    width: calc(100% - 1rem);
+    -o-object-fit: cover;
+    object-fit: cover;
+    height: 60%;
+    border-radius: 2rem;
+}
+
+.albumCard div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 40%;
+    width: 100%;
+}
+
+.albumCard p {
+    margin: 0;
+    height: 2rem;
+    font-weight: 600;
+    color: var(--text);
+    text-align: center;
+    width: 120px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.secondary {
+    font-weight: 600!important;
+    color: var(--gray-light)!important;
+}
