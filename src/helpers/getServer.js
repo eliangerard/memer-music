@@ -1,1 +1,1 @@
-export const server = 'http://3.129.195.138:3000/';
+export const server = 'https://discord-tts-bot-gnol-dev.fl0.io/';
