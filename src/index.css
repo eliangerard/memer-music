@@ -65,7 +65,7 @@ svg {
 }
 
 .content {
-  margin: 6rem 20.5rem 0 7rem;
+  margin: 6rem calc(45vh + 8px) 0 7rem;
   padding-bottom: 5rem;
 }
 

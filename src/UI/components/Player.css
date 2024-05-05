@@ -3,7 +3,7 @@
   position: fixed;
   right: 0;
   top: 0;
-  width: 20rem;
+  width: 45vh;
   height: calc(100vh - 6rem);
   border-radius: 2rem;
   opacity: 0.5;
@@ -19,7 +19,7 @@
   position: fixed;
   right: 0;
   top: 0;
-  width: 20rem;
+  width: 45vh;
   height: calc(100vh - 4rem);
   background-color: var(--active-song-color);
   border-radius: 2rem;
@@ -40,7 +40,7 @@
 
 .playerHeader>button>svg {
   fill: var(--text);
-  height: 1.5rem;
+  height: 1rem;
 }
 
 .playerHeader {
@@ -75,7 +75,7 @@
 .actualSongData {
   height: 100%;
   width: 100%;
-  margin: 1rem 0;
+  margin-bottom: 1rem;
 }
 
 .actualSongData>p {
@@ -135,8 +135,10 @@
 
 .playerControls {
   display: flex;
+  justify-content: space-around;
   border-radius: 1rem;
   height: 4rem;
+  width: 90%;
 }
 
 .playerControls>button {
@@ -145,13 +147,13 @@
   align-items: center;
   justify-content: center;
   border: none;
-  margin: 0 0.4rem;
 }
 
 .playerControls>button>svg {
   fill: var(--text);
-  height: 2rem;
-  width: 2rem;
+  height: 100%;
+  max-height: 2rem;
+  max-width: 2rem;
   stroke: white;
   stroke-width: 0;
 }
@@ -227,7 +229,6 @@
     display: none;
   }
 }
-
 @media (max-width: 700px) {
   .player img {
     display: none;
