@@ -17,7 +17,7 @@ export const TracksList = ({ query, expanded = false }) => {
     return (
         <>
             <h3>Songs</h3>
-            <div className="topArtists" style={{ width: '100%', overflowX: 'scroll' }}>
+            <div className="topArtists" style={{ width: '100%', overflowX: 'auto' }}>
                 <div className={'topTracksContainer' + (expanded ? ' expanded' : '')}>
                     {
                         expanded ?
