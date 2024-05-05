@@ -6,7 +6,7 @@ export const RedirectCode = () => {
 
     return (
         <>
-            <Navigate to={`/home/${code}`} />
+            <Navigate to={`/home/${code !== null ? code : ''}`} />
         </>
     )
 }
