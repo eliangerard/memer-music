@@ -1,7 +1,7 @@
 .loginPanel {
     position: fixed;
     right: 0;
-    top: 55%;
+    top: 54%;
     transform: translate(0%,-50%);
     background-color: var(--background-t);
     border-radius: 2rem;
@@ -10,9 +10,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-right: 25rem;
-    width: calc(100% - 35rem);
-    height: 80vh;
+    margin-right: 50vh;
+    width: calc(100% - 36rem);
+    height: 85vh;
     z-index: 2;
     color: var(--text);
     font-size: larger;
