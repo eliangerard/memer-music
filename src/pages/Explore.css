@@ -16,8 +16,7 @@
 }
 
 .topTracksContainer {
-    width: 90rem;
-    height: 12rem;
+    max-height: 18rem;
     display: flex;
     flex-wrap: wrap;
 }
